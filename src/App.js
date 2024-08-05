@@ -20,17 +20,17 @@ function App() {
 
     elements.forEach((element, index) => {
       gsap.fromTo(element, { opacity: 0, transform: "translateY(70px)" }, {
-        scrollTrigger: {
-            trigger: element,
-            start: "top 90%",
-            end: "top 10%",
-            toggleActions: "restart none none reverse",
-        },
         duration: 0.8, 
         delay: index * 0.1,
         opacity: 1,
         transform: "translateY(0px)",
         ease: "power4.out",
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            end: "top 10%",
+            toggleActions: "restart none none reverse",
+        }
       })
     })
   }, [])
