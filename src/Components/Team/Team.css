@@ -1,0 +1,50 @@
+#Team{
+    margin-top: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 4;
+    padding: 0;
+}
+.team{
+    width: 90%;
+}
+.team h5{
+    font-family: PP Telegraf;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(2.25rem, 1.7143rem + 2.6786vw, 6rem);
+    line-height: 1;
+    text-align: center;
+
+    margin-top: 0;
+    padding-top: 0;
+     
+    color: #ffffff;    
+}
+.team p{
+    font-family: Sequel;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.8214rem + 0.2679vw, 1.25rem);
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+     
+    color: rgba(255, 255, 255, 0.80);
+}
+.members{
+    margin-top: 5vh !important;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+@media (max-width:755px) {
+    .members{
+        width: 90%;
+    }
+}

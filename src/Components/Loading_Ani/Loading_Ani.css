@@ -1,0 +1,59 @@
+#Loading{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    pointer-events: none;
+    animation: ani_loading 1.5s 3s forwards linear;
+}
+#Loading video{
+    width: 20%;
+    z-index: 2;
+    object-fit: contain;
+    animation: ani_logo 0.8s 2.2s forwards cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+#Loading div{
+    width: 100%;
+    height: 100%;
+    background-color: #020A10;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    animation: ani_fundo 1.5s 2.5s forwards cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+@keyframes ani_loading {
+    0%{
+        display: flex;
+    }
+    100%{
+        display: none;
+    }
+}
+@keyframes ani_logo {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes ani_fundo {
+    0%{
+        top: 0;
+        border-radius: 0;
+    }
+    100%{
+        top: -100vh;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width:755px) {
+    #Loading video{
+        width: 50%;
+    }
+}

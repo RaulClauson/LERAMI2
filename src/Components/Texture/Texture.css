@@ -1,0 +1,12 @@
+.texture{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(/public/Images/texture/texture.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 999999999999999999999999999999;
+    pointer-events: none;
+}

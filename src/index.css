@@ -1,0 +1,55 @@
+/* ================================================================ */
+/* FONTS */
+/* ================================================================ */
+
+@font-face {
+  font-family: "Sequel";
+  src: url(/public/fonts/SequelSansMediumDisp.ttf)
+}
+@font-face {
+  font-family: "PP Telegraf";
+  src: url(/public/fonts/PPTelegraf.ttf)
+}
+@font-face {
+  font-family: "PP NeueBit";
+  src: url(/public/fonts/PPNeueBitBold.otf)
+}
+
+/* -------------MUDAR O STYLE DO SCROLLBAR---------------- */
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #020A10;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff40;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff80;
+}
+
+:target {
+  scroll-margin-top: 15vh; /* adjust this value to center the section */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #020A10 !important;
+}
+
+a{
+  cursor: pointer;
+}

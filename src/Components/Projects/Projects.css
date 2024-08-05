@@ -1,0 +1,46 @@
+#Projects{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 4;
+    padding: 0;
+    transition: 0.3s ease;
+}
+.title_Projects{
+    width: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.title_Projects h3{
+    font-family: PP Telegraf;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(3rem, 2.5714rem + 2.1429vw, 6rem);
+    text-align: left;
+
+    margin: 0;
+     
+    color: #ffffff;
+}
+.title_Projects p{
+    font-family: PP NeueBit;
+    font-style: normal;
+    font-size: clamp(1.375rem, 1.2857rem + 0.4464vw, 2rem);
+    text-align: left;
+    line-height: 1;
+
+    margin: 0;
+     
+    color: rgba(255, 255, 255, 0.800000011920929);
+}
+
+.projects{
+    margin-top: 5vh !important;
+    width: 90%;
+    align-items: flex-start;
+    justify-content: space-between;
+}

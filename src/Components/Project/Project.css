@@ -1,0 +1,64 @@
+.project{
+    width: 50%;
+    margin-bottom: 2em;
+    transition: 0.3s ease;
+}
+.project p{
+    font-family: PP NeueBit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.9375rem, 0.8571rem + 0.4018vw, 1.5rem);
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+     
+    color: rgba(255, 255, 255, 0.6000000238418579);    
+}
+.project_title{
+    display: flex;
+    align-items: flex-end;
+}
+.project_title h4{
+    font-family: Sequel;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1.625rem, 1.3661rem + 1.2946vw, 3.4375rem);
+    text-align: left;
+
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+     
+    color: #ffffff;    
+}
+.project_title p{
+    font-family: Sequel;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 2rem);
+    text-align: left;
+
+    margin: 0px 0px;
+    padding: 0;
+    opacity: 0;
+     
+    color: rgba(255, 255, 255, 0.6000000238418579);  
+    text-transform: none;   
+    transition: 0.3s; 
+}
+.image_proj{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.project:hover{
+    cursor: pointer;
+}
+.project:hover > .project_title p{
+    opacity: 1;
+    margin: 0px 15px;
+}
+.projects:hover .project:not(:hover){
+    opacity: 0.4 !important;
+}

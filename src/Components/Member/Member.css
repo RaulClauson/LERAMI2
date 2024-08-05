@@ -1,0 +1,44 @@
+.member{
+    margin-bottom: 2em;
+    transition: 0.3s ease;
+}
+.member h6{
+    font-family: PP NeueBit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
+    line-height: 1;
+    text-align: left;
+    margin-top: 0.3em;
+    margin-bottom: 0;
+    padding: 0;
+     
+    color: #ffffff;     
+    transition: 0.3s;  
+}
+.member p{
+    font-family: PP NeueBit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1rem, 0.9464rem + 0.2679vw, 1.375rem);
+    line-height: 1;
+    text-align: left;
+
+    opacity: 1;
+    margin: 0px;
+     
+    color: rgba(255, 255, 255, 0.60);    
+    text-transform: none;   
+    transition: 0.3s; 
+}
+.image_team{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.member:hover{
+    cursor: pointer;
+}
+.members:hover .member:not(:hover){
+    opacity: 0.4 !important;
+}
