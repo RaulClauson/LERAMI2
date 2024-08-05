@@ -4,8 +4,8 @@ import scrollToSection from '../ScrollTo/index'; // Import the scrollToSection f
 
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+import { scrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(scrollTrigger);
 
 const Home = () => {
 
