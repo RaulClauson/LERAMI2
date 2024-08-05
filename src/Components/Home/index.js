@@ -2,12 +2,8 @@ import './Home.css';
 import Scroll from '../Home/svgs/Scroll';
 import scrollToSection from '../ScrollTo/index'; 
 
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-// Register ScrollTrigger globally 
-gsap.registerPlugin(ScrollTrigger); 
+import React, { useEffect } from 'react';
+import { gsap, ScrollTrigger } from '@gsap/react';
 
 const Home = () => {
 
