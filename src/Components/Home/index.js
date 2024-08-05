@@ -15,17 +15,17 @@ const Home = () => {
 
     useEffect(() => {
         gsap.fromTo(".image", { scale: 1 }, {
-            duration: 1, 
-            width:"99%",
-            height:"100%",
-            bottom:0,
-            borderRadius:0,
             scrollTrigger: {
                 trigger: ".pin",
                 start: "top top",
                 end: "bottom top",
                 scrub: 2,
-            }
+            },
+            duration: 1, 
+            width:"99%",
+            height:"100%",
+            bottom:0,
+            borderRadius:0,
         })
         gsap.fromTo(".blur", { scale: 1 }, {
             duration: 1, 
