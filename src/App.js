@@ -9,7 +9,7 @@ import Texture from "./Components/Texture";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useEffect } from 'react';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 

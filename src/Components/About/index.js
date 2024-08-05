@@ -2,7 +2,7 @@ import './About.css'
 import scrollToSection from '../ScrollTo/index'; // Import the scrollToSection function
 
 import { useEffect } from 'react';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
