@@ -14,7 +14,7 @@ const Home = () => {
       };
 
     useEffect(() => {
-        gsap.fromTo(".image", { scale: 1 }, {
+        gsap.to(".image", {
             scrollTrigger: {
                 trigger: ".pin",
                 start: "top top",
